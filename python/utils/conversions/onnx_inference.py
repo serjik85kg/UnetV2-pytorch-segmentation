@@ -4,7 +4,7 @@ print('ONNX version: ', onnx.__version__)
 print('ONNXruntime version: ', onnxruntime.__version__)
 import numpy as np
 
-from plugins.nn.unet_v2.src.dataset import input_image_normalizer
+from plugin_unet.dataset import input_image_normalizer
 import torchvision.transforms as trans
 
 import matplotlib.pyplot as plt

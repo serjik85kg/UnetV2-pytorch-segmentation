@@ -1,6 +1,6 @@
 import torch
 
-from plugins.nn.unet_v2.src.common import create_model_cpu_for_inference
+from plugin_unet.common import create_model_cpu_for_inference
 from sd_lib.task.paths import TaskPaths
 
 """

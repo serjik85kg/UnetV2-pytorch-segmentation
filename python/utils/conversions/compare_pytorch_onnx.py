@@ -3,8 +3,8 @@ import onnxruntime
 import torch
 import numpy as np
 
-from plugins.nn.unet_v2.src.common import create_model_cpu_for_inference, create_model_for_inference
-from plugins.nn.unet_v2.src.dataset import input_image_normalizer
+from plugin_unet.common import create_model_cpu_for_inference, create_model_for_inference
+from plugin_unet.dataset import input_image_normalizer
 from sd_lib.task.paths import TaskPaths
 
 def to_numpy(tensor):

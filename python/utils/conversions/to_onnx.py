@@ -1,6 +1,6 @@
 import torch
 from torch.nn import DataParallel
-from plugins.nn.unet_v2.src.common import construct_unet
+from plugin_unet.common import construct_unet
 from sd_lib.nn.pytorch.weights import WeightsRW
 
 from sd_lib.task.paths import TaskPaths

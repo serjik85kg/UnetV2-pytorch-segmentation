@@ -6,9 +6,9 @@ print('Torchvision version: ', torchvision.__version__)
 from torch.nn import DataParallel
 from sd_lib import logger
 from sd_lib.nn.pytorch.weights import WeightsRW
-from plugins.nn.unet_v2.src.unet import construct_unet
+from plugin_unet.unet import construct_unet
 from sd_lib.task.paths import TaskPaths
-from plugins.nn.unet_v2.src.common import create_model_for_inference
+from plugin_unet.common import create_model_for_inference
 
 """
 This script converts Pytorch weights to Torchscript format and save it.
