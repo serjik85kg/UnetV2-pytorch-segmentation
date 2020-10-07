@@ -49,13 +49,13 @@ int main( )
 	const cv::Mat outputImg1 = img1.clone( );
 	const cv::Mat outputImg2 = img2.clone( );
 
-	img1 = preprocess( img1, imgHeight, imgWidth, mean, std );
-	img2 = preprocess( img2, imgHeight, imgWidth, mean, std );
+	img1 = unetv2::preprocess( img1, imgHeight, imgWidth, mean, std );
+	img2 = unetv2::preprocess( img2, imgHeight, imgWidth, mean, std );
 
-	auto torchModel = readModel( modelPath );
+	auto torchModel = unetv2::readModel( modelPath );
 
 	const auto inputPair = std::make_pair( img1, img2 );
-	const auto out = forward( inputPair, torchModel, origSize );
+	const auto out = unetv2::forward( inputPair, torchModel, origSize );
 
 	auto output1 = addMask( outputImg1, out.first, yellowMask );
 	auto output2 = addMask( outputImg2, out.second, redMask );
@@ -63,8 +63,8 @@ int main( )
 	cv::imshow( "1", output1 );
 	cv::imshow( "2", output2 );
 
-	cv::imshow( "out.first", out.first );
-	cv::imshow( "out.second", out.second );
+	//cv::imshow( "out.first", out.first );
+	//cv::imshow( "out.second", out.second );
 
 	cv::waitKey( );
 }

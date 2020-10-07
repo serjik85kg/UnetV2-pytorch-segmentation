@@ -18,7 +18,10 @@
 #include <opencv2/highgui/highgui.hpp>
 #include <opencv2/imgproc/imgproc.hpp>
 
-torch::jit::script::Module readModel( const std::string modelPath );
+namespace unetv2 {
 
-std::pair<cv::Mat, cv::Mat> forward( const std::pair<cv::Mat, cv::Mat>& inputPair,
-									 torch::jit::script::Module& torchModule, const cv::Size origImageSize );
+	torch::jit::script::Module readModel(const std::string modelPath);
+
+	std::pair<cv::Mat, cv::Mat> forward(const std::pair<cv::Mat, cv::Mat>& inputPair,
+		torch::jit::script::Module& torchModule, const cv::Size origImageSize);
+}

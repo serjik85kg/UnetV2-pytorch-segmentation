@@ -6,6 +6,8 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <math.h>
 
-cv::Mat preprocess( const cv::Mat& inputImage, const int newHeight, const int newWidth,
-					const std::vector<double> mean,
-					const std::vector<double> std );
+namespace unetv2 {
+	cv::Mat preprocess(const cv::Mat& inputImage, const int newHeight, const int newWidth,
+		const std::vector<double> mean,
+		const std::vector<double> std);
+}
