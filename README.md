@@ -1,2 +1,3 @@
-# UnetV2-pytorch-segmentation
-Raw UnetV2 with vgg16 + binary normalization (human segmentation)
+# Unet-pytorch-segmentation
+1) Python project
+2) C++ project
