@@ -19,7 +19,7 @@ cv::Mat addMask( cv::Mat imageBGR, cv::Mat1f mask, cv::Scalar color )
 		}
 	}
 
-	cv::addWeighted( imageBGR, 0.5, maskConv, 0.5, 0, output );
+	cv::addWeighted( imageBGR, 1.0, maskConv, 0.5, 0, output );
 	return output;
 }
 
@@ -33,7 +33,7 @@ cv::Scalar lightblueMask = cv::Scalar( 255, 255, 0 );
 // RAW main, edit it in future
 int main( )
 {
-	std::string modelPath = "D:/Github/UnetV2-pytorch-segmentation/python/test_outputs/traced_model_unet.pt";
+	std::string modelPath = "../../python/test_outputs/traced_model_unet.pt";
 	std::string imagePath1 = "examples/42f.jpg";
 	std::string imagePath2 = "examples/42p.jpg";
 	const auto imgHeight = 256;
@@ -57,8 +57,11 @@ int main( )
 	const auto inputPair = std::make_pair( img1, img2 );
 	const auto out = unetv2::forward( inputPair, torchModel, origSize );
 
-	auto output1 = addMask( outputImg1, out.first, yellowMask );
+	auto output1 = addMask( outputImg1, out.first, purpleMask );
 	auto output2 = addMask( outputImg2, out.second, redMask );
+
+	cv::resize(output1, output1, { output1.cols / 2, output1.rows / 2 });
+	cv::resize(output2, output2, { output2.cols / 2, output2.rows / 2 });
 
 	cv::imshow( "1", output1 );
 	cv::imshow( "2", output2 );
