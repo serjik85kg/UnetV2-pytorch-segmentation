@@ -9,6 +9,9 @@ This project uses special zip weights for torchscript module **model_unet_traced
 
 [Instructions for libtorch installation on Visual Studio](https://medium.com/@boonboontongbuasirilai/building-pytorch-c-integration-libtorch-with-ms-visual-studio-2017-44281f9921ea)  
 
+## Output demonstration  
+![photo](https://github.com/serjik85kg/UnetV2-pytorch-segmentation/blob/main/cpp/PytorchInference/examples/42_outputs.jpg)
+
 ## TO DO:
 1) Add CUDA configuration (and test output weights from *trace_model_unet.py*).  
 2) Delete deprecated std::pair<Mat, Mat> input type and use universal container for inputs.  
