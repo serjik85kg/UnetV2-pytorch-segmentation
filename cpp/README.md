@@ -17,3 +17,4 @@ This project uses special zip weights for torchscript module **model_unet_traced
 2) Delete deprecated std::pair<Mat, Mat> input type and use universal container for inputs.  
 3) Add Special Inference class.  
 4) Add command prompt inputs.  
+5) Add link to model_traced_unet.pt
