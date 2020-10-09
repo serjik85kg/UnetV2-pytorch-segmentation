@@ -67,3 +67,10 @@ Currently, they serve to convert the "native" *pytorch unet model* to other form
 **to_onnx.py** - converts to ONNX format.  
 **compare_pytorch_onnx.py** - compares "native" pytorch model and onnx model after conversion.  
 **onnx_inference.py** - runs ONNX model.  
+
+# TO DO
+ - Add python code for data transformation
+ - Add python code for training modes
+ - Add link for pretrained model weights
+ - Add building scripts
+ - Add cmakelist and etc.
