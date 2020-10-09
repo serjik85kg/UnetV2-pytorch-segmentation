@@ -58,7 +58,7 @@ Depending on the configuration of your local machine, the model runs on the GPU 
 {"message": "Model has been constructed (w/out weights).", "timestamp": "2020-09-25T16:29:27.330Z", "level": "info"}
 {"message": "Model has been loaded into GPU(s).", "remapped_device_ids": [0], "timestamp": "2020-09-25T16:29:28.944Z", "level": "info"}
 ```
-![](https://github.com/serjik85kg/UnetV2-pytorch-segmentation/blob/main/python/examples/47_outputs.jpg)
+![](https://github.com/serjik85kg/UnetV2-pytorch-segmentation/blob/main/python/examples/47_outputs.jpg)  
 In this case, the model runs on the GPU, but if it is not found, the model will run on the CPU.  
 ## Additional scripts  
 Additional scripts lay in *utils/convertions*.    
