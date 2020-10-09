@@ -14,3 +14,4 @@ https://medium.com/@boonboontongbuasirilai/building-pytorch-c-integration-libtor
 1) Add CUDA configuration (and test output weights from *trace_model_unet.py*).  
 2) Delete deprecated std::pair<Mat, Mat> input type and use universal container for inputs.  
 3) Add Special Inference class.  
+4) Add command prompt inputs.  
