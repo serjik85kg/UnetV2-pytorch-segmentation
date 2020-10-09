@@ -7,8 +7,7 @@ This project uses special zip weights for torchscript module **model_unet_traced
  - Opencv 3 and later
  - libtorch 1.5.1 and later  
 
-Instructions for libtorch installation in Visual Studio:  
-https://medium.com/@boonboontongbuasirilai/building-pytorch-c-integration-libtorch-with-ms-visual-studio-2017-44281f9921ea
+[Instructions for libtorch installation on Visual Studio](https://medium.com/@boonboontongbuasirilai/building-pytorch-c-integration-libtorch-with-ms-visual-studio-2017-44281f9921ea)  
 
 ## TO DO:
 1) Add CUDA configuration (and test output weights from *trace_model_unet.py*).  
