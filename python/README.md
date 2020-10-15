@@ -74,4 +74,3 @@ Currently, they serve to convert the "native" *pytorch unet model* to other form
  - Add python code for training modes
  - Add link for pretrained model weights
  - Add building scripts
- - Add cmakelist and etc.
