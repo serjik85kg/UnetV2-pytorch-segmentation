@@ -12,8 +12,8 @@ from sd_lib.imaging import image
 
 from sd_lib.task.paths import TaskPaths
 
-from sd_lib.annotation.annotation import ANN_EXT, Annotation
-from sd_lib.annotation.label import Label
+#from sd_lib.annotation.annotation import ANN_EXT, Annotation
+#from sd_lib.annotation.label import Label
 
 from sd_lib.geometry.bitmap import Bitmap
 from sd_lib.geometry.point_location import PointLocation
